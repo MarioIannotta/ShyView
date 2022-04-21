@@ -1,0 +1,6 @@
+framework module ShyView {
+  umbrella header "ShyView-umbrella.h"
+
+  export *
+  module * { export * }
+}
