@@ -32,7 +32,7 @@ view.addSubview(topSecretLabel)
 
 ## Disclaimer
 
-This component, is build upon a UITextField; use it at your own risk.
+This component, is build upon a UITextField "hack"; use it at your own risk.
 
 ## License
 
