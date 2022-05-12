@@ -10,8 +10,7 @@ Pod::Spec.new do |s|
   let topSecretLabel = UILabel()
   topSecretLabel.text = "4, 8, 15, 16, 23, 42"
   
-  let shyView = ShyView(topSecretLabel)
-  view.addSubview(topSecretLabel)
+  view.addSubview(topSecretLabel.avoidScreenshots())
   ```
                        DESC
 
@@ -21,7 +20,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/MarioIannotta/ShyView.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/marioiannotta'
 
-  s.source_files = 'ShyView/ShyView.swift'
+  s.source_files = 'Sources/ShyView/ShyView.swift'
   s.swift_version = '5'
   s.ios.deployment_target = '13.0'
 end
