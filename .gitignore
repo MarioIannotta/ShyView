@@ -42,3 +42,4 @@ Carthage/Build
 UserInterfaceState.xcuserstate
 *.bcsymbolmap
 *.xcuserdatad
+.swiftpm
