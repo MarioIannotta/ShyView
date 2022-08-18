@@ -1,4 +1,4 @@
-![ShyView: A UI component that avoid schreenshots and recordings](https://raw.githubusercontent.com/MarioIannotta/ShyView/main/Resources/ShyView.jpg)
+![ShyView: A UI component that avoid screenshots and recordings](https://raw.githubusercontent.com/MarioIannotta/ShyView/main/Resources/ShyView.jpg)
 
 # ShyView
 
