@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/cocoapods/l/ShyView.svg?style=flat)](https://cocoapods.org/pods/ShyView)
 [![Platform](https://img.shields.io/cocoapods/p/ShyView.svg?style=flat)](https://cocoapods.org/pods/ShyView)
 
-<img src="https://raw.githubusercontent.com/MarioIannotta/ShyView/main/Resources/Demo.gif" height="500"/>
+<img src="https://raw.githubusercontent.com/MarioIannotta/ShyView/main/Resources/Demo.gif" height="500" width="300"/>
 
 ## Installation
 
