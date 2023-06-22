@@ -8,8 +8,8 @@
 import UIKit
 
 extension UIView {
-    public func avoidScreenshots() -> UIView {
-        ShyView(self) ?? self
+    public func privacySensitive(_ isSensitive: Bool = true) -> UIView {
+        isSensitive ? { ShyView(self) ?? self }() : self
     }
 }
 

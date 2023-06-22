@@ -29,7 +29,7 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		62B4276CFC24A0FACD4773A2 /* Pods-ShyView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShyView_Example.debug.xcconfig"; path = "Target Support Files/Pods-ShyView_Example/Pods-ShyView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8AD47E184B2A929CC1741D3B /* Pods_ShyView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShyView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2296FC8A7396CAD22BBA876 /* ShyView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ShyView.podspec; path = ../ShyView.podspec; sourceTree = "<group>"; };
+		E2296FC8A7396CAD22BBA876 /* ShyView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ShyView.podspec; path = ../ShyView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F5B9060C282216D899487C0E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F77D0B5EA7EFE6E05969446D /* Pods_ShyView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShyView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */

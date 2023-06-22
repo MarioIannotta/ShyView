@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   let topSecretLabel = UILabel()
   topSecretLabel.text = "4, 8, 15, 16, 23, 42"
   
-  view.addSubview(topSecretLabel.avoidScreenshots())
+  view.addSubview(topSecretLabel.privacySensitive())
   ```
                        DESC
 

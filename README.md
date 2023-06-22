@@ -58,7 +58,7 @@ There is also a helper for the implicit content protection
 let topSecretLabel = UILabel()
 topSecretLabel.text = "4, 8, 15, 16, 23, 42"
 
-view.addSubview(topSecretLabel.avoidScreenshots())
+view.addSubview(topSecretLabel.privacySensitive())
 // Configure layout for topSecretLabel
 ```
 
