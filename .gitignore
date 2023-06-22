@@ -42,4 +42,6 @@ Carthage/Build
 UserInterfaceState.xcuserstate
 *.bcsymbolmap
 *.xcuserdatad
-.swiftpm
+.build
+.swiftpm/Xcode/package.xcworkspace/xcshareddata/swiftpm/Package.resolved
+Package.resolved
