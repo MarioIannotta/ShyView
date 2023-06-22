@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		2403DFE4F566E9291C75EEDF66E4DE53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		2D3E9B2B494BEC5250ED08499EA65E67 /* Pods-ShyView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C78BE8D15ADB3A3F0B848D1B88FC327 /* Pods-ShyView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4491B7291AB158DD0488F2045DA7156C /* ShyView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F570040DACEA25112903E7318CCCD825 /* ShyView-dummy.m */; };
+		4491B7291AB158DD0488F2045DA7156C /* ShyView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37334E0FFE281D5C2F0FD063662E446C /* ShyView-dummy.m */; };
+		46D5E521AB09673853604350A052E07B /* ShyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B117A52D3A82CD9516D5A78DAE8519 /* ShyView.swift */; };
 		84EEBAA5EFC0B57B19C2CB149B16F806 /* Pods-ShyView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BA62CC803E0C9522E1545D62DDDD68 /* Pods-ShyView_Example-dummy.m */; };
 		890A131CF21BBBEA96ECA6331EE14833 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		B39597E30AA3BC1DB31AB97EA7731CD1 /* ShyView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 183964ACC118908F629EF9872308C4F5 /* ShyView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2A050C6FE7397B8C3AA0619FD26A13E /* ShyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F2D8320D418FEFF869DA859FDCE08 /* ShyView.swift */; };
+		B39597E30AA3BC1DB31AB97EA7731CD1 /* ShyView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F493B8EBAA351E6E58FF8CDFA5B62DC4 /* ShyView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,28 +29,28 @@
 /* Begin PBXFileReference section */
 		139C784530BF6B8972B2CB9ADCB72E8F /* Pods-ShyView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShyView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		13BA62CC803E0C9522E1545D62DDDD68 /* Pods-ShyView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShyView_Example-dummy.m"; sourceTree = "<group>"; };
-		183964ACC118908F629EF9872308C4F5 /* ShyView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShyView-umbrella.h"; sourceTree = "<group>"; };
-		1CBCBAC0A0AD477EFE95C16180937174 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		21E78CBBD3851DB9EE1FFDC4F08A9CA7 /* Pods-ShyView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShyView_Example-Info.plist"; sourceTree = "<group>"; };
-		279F2D8320D418FEFF869DA859FDCE08 /* ShyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShyView.swift; path = ShyView/ShyView.swift; sourceTree = "<group>"; };
 		297B4661ABB7DC4CD84AA5253F8DAAAE /* Pods-ShyView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShyView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		2AB3BFF7BF8B6CBC455CB6553A4AD980 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		4FA7E5D62E532C1A7B71C234D17EFAAA /* ShyView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShyView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C6CFE28321B2A3A1C348B8B490172E6 /* ShyView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ShyView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		33682F6F3C57866CF54EAF856FCDC7C8 /* ShyView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShyView-prefix.pch"; sourceTree = "<group>"; };
+		37334E0FFE281D5C2F0FD063662E446C /* ShyView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ShyView-dummy.m"; sourceTree = "<group>"; };
+		3E306BEE0170C8B314624907EC09F5BC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4FA7E5D62E532C1A7B71C234D17EFAAA /* ShyView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ShyView; path = ShyView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6521884869844D3E0D368C5E718EFD2E /* ShyView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ShyView-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		791CACF581999491C39BF9883E9DD975 /* ShyView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShyView-prefix.pch"; sourceTree = "<group>"; };
 		7C78BE8D15ADB3A3F0B848D1B88FC327 /* Pods-ShyView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShyView_Example-umbrella.h"; sourceTree = "<group>"; };
+		8A6684DD46CF06498E239A48780F71A8 /* ShyView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ShyView.release.xcconfig; sourceTree = "<group>"; };
+		916F28B5CA4479161B3970C8F3955B1C /* ShyView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ShyView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		927604E1EC210CE7DA3249A466E03BF7 /* Pods-ShyView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShyView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		95750357CAD2CE6CA3D76564754F8D36 /* Pods-ShyView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShyView_Example.modulemap"; sourceTree = "<group>"; };
-		9D937FF01A887D2CA9D7ADD4537FEFCC /* ShyView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ShyView.modulemap; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AF2EFCF6FD3F9380F901DEFC926951DD /* ShyView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ShyView-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4B117A52D3A82CD9516D5A78DAE8519 /* ShyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShyView.swift; path = Sources/ShyView/ShyView.swift; sourceTree = "<group>"; };
 		B15E899F434E8A867AFC1C8FD9F538B7 /* Pods-ShyView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShyView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B443E66C6EAD828820D1334C9962F266 /* Pods_ShyView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShyView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C29D9194B5DB1608746F7D96A0EB3384 /* ShyView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ShyView.debug.xcconfig; sourceTree = "<group>"; };
+		B443E66C6EAD828820D1334C9962F266 /* Pods-ShyView_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ShyView_Example"; path = Pods_ShyView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D912EDC5CA962CA1C59C636780B8A0A7 /* Pods-ShyView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShyView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E75C373BCABC56A4256C1E73E9E07632 /* ShyView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ShyView.release.xcconfig; sourceTree = "<group>"; };
-		F570040DACEA25112903E7318CCCD825 /* ShyView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ShyView-dummy.m"; sourceTree = "<group>"; };
+		DC6E9709397EBA477396C144219599F1 /* ShyView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ShyView.debug.xcconfig; sourceTree = "<group>"; };
+		E01F4BE52D83ABF22BA3C8C95570883E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F493B8EBAA351E6E58FF8CDFA5B62DC4 /* ShyView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShyView-umbrella.h"; sourceTree = "<group>"; };
+		FEF13BB3C03967663ACE3C385ABF12E3 /* ShyView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ShyView.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,16 +81,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		47C712B4B2C319B68F994B800B991545 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				1CBCBAC0A0AD477EFE95C16180937174 /* LICENSE */,
-				2AB3BFF7BF8B6CBC455CB6553A4AD980 /* README.md */,
-				5C6CFE28321B2A3A1C348B8B490172E6 /* ShyView.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,37 +89,37 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		588585B4FFC472EA38047A4BB698B361 /* ShyView */ = {
+		736094ED7A885A9DAF99879D4B0798D5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				279F2D8320D418FEFF869DA859FDCE08 /* ShyView.swift */,
-				47C712B4B2C319B68F994B800B991545 /* Pod */,
-				9DDF2C41F23FBCFAB7F0EF40AE16DD4F /* Support Files */,
-			);
-			name = ShyView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		9DDF2C41F23FBCFAB7F0EF40AE16DD4F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9D937FF01A887D2CA9D7ADD4537FEFCC /* ShyView.modulemap */,
-				F570040DACEA25112903E7318CCCD825 /* ShyView-dummy.m */,
-				AF2EFCF6FD3F9380F901DEFC926951DD /* ShyView-Info.plist */,
-				791CACF581999491C39BF9883E9DD975 /* ShyView-prefix.pch */,
-				183964ACC118908F629EF9872308C4F5 /* ShyView-umbrella.h */,
-				C29D9194B5DB1608746F7D96A0EB3384 /* ShyView.debug.xcconfig */,
-				E75C373BCABC56A4256C1E73E9E07632 /* ShyView.release.xcconfig */,
+				FEF13BB3C03967663ACE3C385ABF12E3 /* ShyView.modulemap */,
+				37334E0FFE281D5C2F0FD063662E446C /* ShyView-dummy.m */,
+				6521884869844D3E0D368C5E718EFD2E /* ShyView-Info.plist */,
+				33682F6F3C57866CF54EAF856FCDC7C8 /* ShyView-prefix.pch */,
+				F493B8EBAA351E6E58FF8CDFA5B62DC4 /* ShyView-umbrella.h */,
+				DC6E9709397EBA477396C144219599F1 /* ShyView.debug.xcconfig */,
+				8A6684DD46CF06498E239A48780F71A8 /* ShyView.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ShyView";
 			sourceTree = "<group>";
 		};
+		A8713E7AD9951B567D75CB507F8CB1D8 /* ShyView */ = {
+			isa = PBXGroup;
+			children = (
+				A4B117A52D3A82CD9516D5A78DAE8519 /* ShyView.swift */,
+				C7345266476ED53C646A53871745909B /* Pod */,
+				736094ED7A885A9DAF99879D4B0798D5 /* Support Files */,
+			);
+			name = ShyView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		C0A50C25A7C77E59615609BE1D424B38 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B443E66C6EAD828820D1334C9962F266 /* Pods_ShyView_Example.framework */,
-				4FA7E5D62E532C1A7B71C234D17EFAAA /* ShyView.framework */,
+				B443E66C6EAD828820D1334C9962F266 /* Pods-ShyView_Example */,
+				4FA7E5D62E532C1A7B71C234D17EFAAA /* ShyView */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +139,16 @@
 			);
 			name = "Pods-ShyView_Example";
 			path = "Target Support Files/Pods-ShyView_Example";
+			sourceTree = "<group>";
+		};
+		C7345266476ED53C646A53871745909B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E01F4BE52D83ABF22BA3C8C95570883E /* LICENSE */,
+				3E306BEE0170C8B314624907EC09F5BC /* README.md */,
+				916F28B5CA4479161B3970C8F3955B1C /* ShyView.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -173,7 +173,7 @@
 		D57890C6838FC9BE81F7D4C44BFF5E60 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				588585B4FFC472EA38047A4BB698B361 /* ShyView */,
+				A8713E7AD9951B567D75CB507F8CB1D8 /* ShyView */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -216,7 +216,7 @@
 			);
 			name = "Pods-ShyView_Example";
 			productName = Pods_ShyView_Example;
-			productReference = B443E66C6EAD828820D1334C9962F266 /* Pods_ShyView_Example.framework */;
+			productReference = B443E66C6EAD828820D1334C9962F266 /* Pods-ShyView_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 		4199DF94138F93CC433B6C6521C57C7A /* ShyView */ = {
@@ -234,7 +234,7 @@
 			);
 			name = ShyView;
 			productName = ShyView;
-			productReference = 4FA7E5D62E532C1A7B71C234D17EFAAA /* ShyView.framework */;
+			productReference = 4FA7E5D62E532C1A7B71C234D17EFAAA /* ShyView */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -243,8 +243,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1330;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -295,7 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2A050C6FE7397B8C3AA0619FD26A13E /* ShyView.swift in Sources */,
+				46D5E521AB09673853604350A052E07B /* ShyView.swift in Sources */,
 				4491B7291AB158DD0488F2045DA7156C /* ShyView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +317,7 @@
 			baseConfigurationReference = B15E899F434E8A867AFC1C8FD9F538B7 /* Pods-ShyView_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -347,8 +348,9 @@
 		};
 		7CA25FDA780B7AF7D86142FA3F13DBB4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E75C373BCABC56A4256C1E73E9E07632 /* ShyView.release.xcconfig */;
+			baseConfigurationReference = 8A6684DD46CF06498E239A48780F71A8 /* ShyView.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -445,8 +447,9 @@
 		};
 		9BA0828BF4A92B547179706B89361FCD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C29D9194B5DB1608746F7D96A0EB3384 /* ShyView.debug.xcconfig */;
+			baseConfigurationReference = DC6E9709397EBA477396C144219599F1 /* ShyView.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -529,7 +532,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -540,6 +544,7 @@
 			baseConfigurationReference = 927604E1EC210CE7DA3249A466E03BF7 /* Pods-ShyView_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

@@ -1,5 +1,5 @@
 PODS:
-  - ShyView (0.1.0)
+  - ShyView (0.2.0)
 
 DEPENDENCIES:
   - ShyView (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ShyView: 062fbd4df6d470b7f14a44664dc4e1c21a4e9909
+  ShyView: 1c4e992d875830b975da4da9a05c8744f7e99078
 
 PODFILE CHECKSUM: 274f9073cceb255d19ab7e6e29abcacc0c16cebd
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.12.1
