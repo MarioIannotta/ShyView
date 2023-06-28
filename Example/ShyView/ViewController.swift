@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         balanceLabel.text = "123,456€"
         balanceLabel.textColor = .white
         
-        headerStackView.addArrangedSubview(ShyView(balanceLabel) ?? balanceLabel)
+        headerStackView.addArrangedSubview(balanceLabel.privacySensitive())
     }
 }
 
