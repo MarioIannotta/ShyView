@@ -5,6 +5,9 @@
 //  Created by Mario Iannotta on 21/04/22.
 //
 
+import Foundation
+
+#if os(iOS)
 import UIKit
 
 extension UIView {
@@ -145,3 +148,4 @@ extension ShyView.IncompatibilityHandler {
         return .init { assertionFailure(message) }
     }
 }
+#endif
