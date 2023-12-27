@@ -1,0 +1,5 @@
+version: 1
+builder:
+    - platform: ios
+        documentation_targets: [ShyView]
+        swift_version: 5.9

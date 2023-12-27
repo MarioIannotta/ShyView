@@ -7,17 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2403DFE4F566E9291C75EEDF66E4DE53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		26354FB1EF1A3079E35ACF57D52F4D94 /* SecureContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB39CBF9BCA47E95725F932B9798BC40 /* SecureContainerView.swift */; };
 		2D3E9B2B494BEC5250ED08499EA65E67 /* Pods-ShyView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C78BE8D15ADB3A3F0B848D1B88FC327 /* Pods-ShyView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4491B7291AB158DD0488F2045DA7156C /* ShyView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37334E0FFE281D5C2F0FD063662E446C /* ShyView-dummy.m */; };
-		46D5E521AB09673853604350A052E07B /* ShyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B117A52D3A82CD9516D5A78DAE8519 /* ShyView.swift */; };
+		30CF8CA515641AB17B03E8FE15A02D47 /* RuntimeWarnings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09877C092E6EA866C99BBC8B07256940 /* RuntimeWarnings.swift */; };
+		4B63BE9AA0A82DCF0F8AB2DFE54C3776 /* ShyView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB3352DD3F104C4003AE202C026715 /* ShyView-dummy.m */; };
+		566C804AA2CFB99C907132ADDEAFBF70 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303607DFE4EB2A5FB78D37078B0497E /* UIView+Layout.swift */; };
+		6A286E899C2C5135DC639A72F0BBC86C /* ShyView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5985ED7B9FE4FE75E1C310E14D3E399F /* ShyView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84EEBAA5EFC0B57B19C2CB149B16F806 /* Pods-ShyView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BA62CC803E0C9522E1545D62DDDD68 /* Pods-ShyView_Example-dummy.m */; };
 		890A131CF21BBBEA96ECA6331EE14833 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		B39597E30AA3BC1DB31AB97EA7731CD1 /* ShyView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F493B8EBAA351E6E58FF8CDFA5B62DC4 /* ShyView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F8F4D1651B66AD493FC20BC41D8D4E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A815076B17F6881F841B15F97918E224 /* UIView+SecureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846AF96086225F801ACBC6AC5F505D7 /* UIView+SecureView.swift */; };
+		A917361F7DD012D7835EDD2DFBE7DB2E /* ShyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AD1C74AC8365328FD734E57C25A8AC /* ShyView.swift */; };
+		AECE4CAAFDDB6A45F77E4160E194E8D0 /* ShyView+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8379FDB608C4D812F154E4B6C4457C8 /* ShyView+SwiftUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		377ED6E20E8EE379330D132944B318C7 /* PBXContainerItemProxy */ = {
+		F78735093E9BC9020B3F6840B260F8D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -27,30 +32,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		087EDD889D27BB23E9E7C1F41BDBED2C /* ShyView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ShyView.debug.xcconfig; sourceTree = "<group>"; };
+		09877C092E6EA866C99BBC8B07256940 /* RuntimeWarnings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RuntimeWarnings.swift; sourceTree = "<group>"; };
 		139C784530BF6B8972B2CB9ADCB72E8F /* Pods-ShyView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ShyView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		13BA62CC803E0C9522E1545D62DDDD68 /* Pods-ShyView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ShyView_Example-dummy.m"; sourceTree = "<group>"; };
+		2113D4A4E29B2D6FDB4D4C914C20A2A7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		21E78CBBD3851DB9EE1FFDC4F08A9CA7 /* Pods-ShyView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShyView_Example-Info.plist"; sourceTree = "<group>"; };
+		241B1FF32DBF5BBAE22302047CFC7AC1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		297B4661ABB7DC4CD84AA5253F8DAAAE /* Pods-ShyView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShyView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		33682F6F3C57866CF54EAF856FCDC7C8 /* ShyView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShyView-prefix.pch"; sourceTree = "<group>"; };
-		37334E0FFE281D5C2F0FD063662E446C /* ShyView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ShyView-dummy.m"; sourceTree = "<group>"; };
-		3E306BEE0170C8B314624907EC09F5BC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		4FA7E5D62E532C1A7B71C234D17EFAAA /* ShyView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ShyView; path = ShyView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6521884869844D3E0D368C5E718EFD2E /* ShyView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ShyView-Info.plist"; sourceTree = "<group>"; };
+		52B2023F2EFE611FA07483B8A59A2D87 /* ShyView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ShyView.modulemap; sourceTree = "<group>"; };
+		5985ED7B9FE4FE75E1C310E14D3E399F /* ShyView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShyView-umbrella.h"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7C78BE8D15ADB3A3F0B848D1B88FC327 /* Pods-ShyView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ShyView_Example-umbrella.h"; sourceTree = "<group>"; };
-		8A6684DD46CF06498E239A48780F71A8 /* ShyView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ShyView.release.xcconfig; sourceTree = "<group>"; };
-		916F28B5CA4479161B3970C8F3955B1C /* ShyView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ShyView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8820023A335878D6405F6EF4AE82836D /* ShyView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ShyView-Info.plist"; sourceTree = "<group>"; };
+		8F089525C035DDA869237E03C7EF7A37 /* ShyView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ShyView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		927604E1EC210CE7DA3249A466E03BF7 /* Pods-ShyView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShyView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9303607DFE4EB2A5FB78D37078B0497E /* UIView+Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		95750357CAD2CE6CA3D76564754F8D36 /* Pods-ShyView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ShyView_Example.modulemap"; sourceTree = "<group>"; };
+		9A7E9402CEFC5E211973147726B1687F /* ShyView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShyView-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A4B117A52D3A82CD9516D5A78DAE8519 /* ShyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShyView.swift; path = Sources/ShyView/ShyView.swift; sourceTree = "<group>"; };
 		B15E899F434E8A867AFC1C8FD9F538B7 /* Pods-ShyView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShyView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B1AD1C74AC8365328FD734E57C25A8AC /* ShyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShyView.swift; path = Sources/ShyView/ShyView.swift; sourceTree = "<group>"; };
 		B443E66C6EAD828820D1334C9962F266 /* Pods-ShyView_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ShyView_Example"; path = Pods_ShyView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8379FDB608C4D812F154E4B6C4457C8 /* ShyView+SwiftUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ShyView+SwiftUI.swift"; path = "Sources/ShyView/ShyView+SwiftUI.swift"; sourceTree = "<group>"; };
+		D846AF96086225F801ACBC6AC5F505D7 /* UIView+SecureView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+SecureView.swift"; sourceTree = "<group>"; };
 		D912EDC5CA962CA1C59C636780B8A0A7 /* Pods-ShyView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ShyView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DC6E9709397EBA477396C144219599F1 /* ShyView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ShyView.debug.xcconfig; sourceTree = "<group>"; };
-		E01F4BE52D83ABF22BA3C8C95570883E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		F493B8EBAA351E6E58FF8CDFA5B62DC4 /* ShyView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShyView-umbrella.h"; sourceTree = "<group>"; };
-		FEF13BB3C03967663ACE3C385ABF12E3 /* ShyView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ShyView.modulemap; sourceTree = "<group>"; };
+		DDBB3352DD3F104C4003AE202C026715 /* ShyView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ShyView-dummy.m"; sourceTree = "<group>"; };
+		EB39CBF9BCA47E95725F932B9798BC40 /* SecureContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureContainerView.swift; path = Sources/ShyView/SecureContainerView.swift; sourceTree = "<group>"; };
+		F2CD05CA1550805C64CB9611DE201874 /* ShyView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ShyView.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,23 +72,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5261F268DF9A8D9A124A04E2011C4C54 /* Frameworks */ = {
+		804BE53A58DB9A34C5992F8D2B97A230 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2403DFE4F566E9291C75EEDF66E4DE53 /* Foundation.framework in Frameworks */,
+				9F8F4D1651B66AD493FC20BC41D8D4E3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0626B8DA0C87A239F9B1EA3D6C5003B1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				09877C092E6EA866C99BBC8B07256940 /* RuntimeWarnings.swift */,
+				9303607DFE4EB2A5FB78D37078B0497E /* UIView+Layout.swift */,
+				D846AF96086225F801ACBC6AC5F505D7 /* UIView+SecureView.swift */,
+			);
+			name = Helpers;
+			path = Sources/ShyView/Helpers;
+			sourceTree = "<group>";
+		};
 		18DB2B3CA03726902AC19C8C316FCB10 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				C5A3B1738BF9C35A0669DF863225C4A3 /* Pods-ShyView_Example */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3DC8ADCA2EF92C0D5B6661F978E1BAB6 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				2113D4A4E29B2D6FDB4D4C914C20A2A7 /* LICENSE */,
+				241B1FF32DBF5BBAE22302047CFC7AC1 /* README.md */,
+				8F089525C035DDA869237E03C7EF7A37 /* ShyView.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -89,27 +120,30 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		736094ED7A885A9DAF99879D4B0798D5 /* Support Files */ = {
+		822034CEBFC40BE92007FD681D46900B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FEF13BB3C03967663ACE3C385ABF12E3 /* ShyView.modulemap */,
-				37334E0FFE281D5C2F0FD063662E446C /* ShyView-dummy.m */,
-				6521884869844D3E0D368C5E718EFD2E /* ShyView-Info.plist */,
-				33682F6F3C57866CF54EAF856FCDC7C8 /* ShyView-prefix.pch */,
-				F493B8EBAA351E6E58FF8CDFA5B62DC4 /* ShyView-umbrella.h */,
-				DC6E9709397EBA477396C144219599F1 /* ShyView.debug.xcconfig */,
-				8A6684DD46CF06498E239A48780F71A8 /* ShyView.release.xcconfig */,
+				52B2023F2EFE611FA07483B8A59A2D87 /* ShyView.modulemap */,
+				DDBB3352DD3F104C4003AE202C026715 /* ShyView-dummy.m */,
+				8820023A335878D6405F6EF4AE82836D /* ShyView-Info.plist */,
+				9A7E9402CEFC5E211973147726B1687F /* ShyView-prefix.pch */,
+				5985ED7B9FE4FE75E1C310E14D3E399F /* ShyView-umbrella.h */,
+				087EDD889D27BB23E9E7C1F41BDBED2C /* ShyView.debug.xcconfig */,
+				F2CD05CA1550805C64CB9611DE201874 /* ShyView.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ShyView";
 			sourceTree = "<group>";
 		};
-		A8713E7AD9951B567D75CB507F8CB1D8 /* ShyView */ = {
+		A46D3EAB2E7F5A9951D9104452562B8A /* ShyView */ = {
 			isa = PBXGroup;
 			children = (
-				A4B117A52D3A82CD9516D5A78DAE8519 /* ShyView.swift */,
-				C7345266476ED53C646A53871745909B /* Pod */,
-				736094ED7A885A9DAF99879D4B0798D5 /* Support Files */,
+				EB39CBF9BCA47E95725F932B9798BC40 /* SecureContainerView.swift */,
+				B1AD1C74AC8365328FD734E57C25A8AC /* ShyView.swift */,
+				D8379FDB608C4D812F154E4B6C4457C8 /* ShyView+SwiftUI.swift */,
+				0626B8DA0C87A239F9B1EA3D6C5003B1 /* Helpers */,
+				3DC8ADCA2EF92C0D5B6661F978E1BAB6 /* Pod */,
+				822034CEBFC40BE92007FD681D46900B /* Support Files */,
 			);
 			name = ShyView;
 			path = ../..;
@@ -141,21 +175,19 @@
 			path = "Target Support Files/Pods-ShyView_Example";
 			sourceTree = "<group>";
 		};
-		C7345266476ED53C646A53871745909B /* Pod */ = {
+		C871AF3D368A2CF71AB89AD079346CBA /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E01F4BE52D83ABF22BA3C8C95570883E /* LICENSE */,
-				3E306BEE0170C8B314624907EC09F5BC /* README.md */,
-				916F28B5CA4479161B3970C8F3955B1C /* ShyView.podspec */,
+				A46D3EAB2E7F5A9951D9104452562B8A /* ShyView */,
 			);
-			name = Pod;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D57890C6838FC9BE81F7D4C44BFF5E60 /* Development Pods */,
+				C871AF3D368A2CF71AB89AD079346CBA /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				C0A50C25A7C77E59615609BE1D424B38 /* Products */,
 				18DB2B3CA03726902AC19C8C316FCB10 /* Targets Support Files */,
@@ -170,30 +202,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D57890C6838FC9BE81F7D4C44BFF5E60 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A8713E7AD9951B567D75CB507F8CB1D8 /* ShyView */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		880A88947585C81B3A4C4FF3163AA63E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B39597E30AA3BC1DB31AB97EA7731CD1 /* ShyView-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D1EC32183BA260B26A3C6F9622239334 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2D3E9B2B494BEC5250ED08499EA65E67 /* Pods-ShyView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3FAF877789F089E21FFF6E69D04CCC7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A286E899C2C5135DC639A72F0BBC86C /* ShyView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +236,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				18D3647EFA6D756520508F5CB0700750 /* PBXTargetDependency */,
+				95E48831B5BBCEE36D9688919C7601DA /* PBXTargetDependency */,
 			);
 			name = "Pods-ShyView_Example";
 			productName = Pods_ShyView_Example;
@@ -221,12 +245,12 @@
 		};
 		4199DF94138F93CC433B6C6521C57C7A /* ShyView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 996F11278623B9C239334072D2F02CA1 /* Build configuration list for PBXNativeTarget "ShyView" */;
+			buildConfigurationList = 48B2646F2E62A9BAF1C15176E2227D6C /* Build configuration list for PBXNativeTarget "ShyView" */;
 			buildPhases = (
-				880A88947585C81B3A4C4FF3163AA63E /* Headers */,
-				EE835B7DB74B21A3675350A7DFF473FA /* Sources */,
-				5261F268DF9A8D9A124A04E2011C4C54 /* Frameworks */,
-				5F121D64BD625AD78337AA5C08E146D4 /* Resources */,
+				F3FAF877789F089E21FFF6E69D04CCC7 /* Headers */,
+				2D05C167D55A1F07AF17489709E1CCC6 /* Sources */,
+				804BE53A58DB9A34C5992F8D2B97A230 /* Frameworks */,
+				6B918938123E88C9B291E96736DA7C26 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -266,7 +290,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5F121D64BD625AD78337AA5C08E146D4 /* Resources */ = {
+		6B918938123E88C9B291E96736DA7C26 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,6 +307,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2D05C167D55A1F07AF17489709E1CCC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30CF8CA515641AB17B03E8FE15A02D47 /* RuntimeWarnings.swift in Sources */,
+				26354FB1EF1A3079E35ACF57D52F4D94 /* SecureContainerView.swift in Sources */,
+				A917361F7DD012D7835EDD2DFBE7DB2E /* ShyView.swift in Sources */,
+				AECE4CAAFDDB6A45F77E4160E194E8D0 /* ShyView+SwiftUI.swift in Sources */,
+				4B63BE9AA0A82DCF0F8AB2DFE54C3776 /* ShyView-dummy.m in Sources */,
+				566C804AA2CFB99C907132ADDEAFBF70 /* UIView+Layout.swift in Sources */,
+				A815076B17F6881F841B15F97918E224 /* UIView+SecureView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8AB95D4463D1B3413210985E22AE3F4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,23 +329,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE835B7DB74B21A3675350A7DFF473FA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				46D5E521AB09673853604350A052E07B /* ShyView.swift in Sources */,
-				4491B7291AB158DD0488F2045DA7156C /* ShyView-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		18D3647EFA6D756520508F5CB0700750 /* PBXTargetDependency */ = {
+		95E48831B5BBCEE36D9688919C7601DA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ShyView;
 			target = 4199DF94138F93CC433B6C6521C57C7A /* ShyView */;
-			targetProxy = 377ED6E20E8EE379330D132944B318C7 /* PBXContainerItemProxy */;
+			targetProxy = F78735093E9BC9020B3F6840B260F8D2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -346,9 +375,9 @@
 			};
 			name = Debug;
 		};
-		7CA25FDA780B7AF7D86142FA3F13DBB4 /* Release */ = {
+		4E2C7329A9694C7FF2D07A8536102CAC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A6684DD46CF06498E239A48780F71A8 /* ShyView.release.xcconfig */;
+			baseConfigurationReference = F2CD05CA1550805C64CB9611DE201874 /* ShyView.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -442,38 +471,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		9BA0828BF4A92B547179706B89361FCD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC6E9709397EBA477396C144219599F1 /* ShyView.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ShyView/ShyView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ShyView/ShyView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ShyView/ShyView.modulemap";
-				PRODUCT_MODULE_NAME = ShyView;
-				PRODUCT_NAME = ShyView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -574,6 +571,38 @@
 			};
 			name = Release;
 		};
+		D91B279B01CF06FD67E400F614700662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 087EDD889D27BB23E9E7C1F41BDBED2C /* ShyView.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ShyView/ShyView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ShyView/ShyView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ShyView/ShyView.modulemap";
+				PRODUCT_MODULE_NAME = ShyView;
+				PRODUCT_NAME = ShyView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -586,11 +615,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		996F11278623B9C239334072D2F02CA1 /* Build configuration list for PBXNativeTarget "ShyView" */ = {
+		48B2646F2E62A9BAF1C15176E2227D6C /* Build configuration list for PBXNativeTarget "ShyView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9BA0828BF4A92B547179706B89361FCD /* Debug */,
-				7CA25FDA780B7AF7D86142FA3F13DBB4 /* Release */,
+				D91B279B01CF06FD67E400F614700662 /* Debug */,
+				4E2C7329A9694C7FF2D07A8536102CAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -12,13 +12,13 @@ extension UIColor {
         let inset = inset ?? min(size.width, size.height) / 12
         let cornerRadius = cornerRadius ?? inset * 2
         let imageRenderer = UIGraphicsImageRenderer(size: size)
-        
+
         let image = imageRenderer.image { ctx in
-            
+
             ctx.cgContext.setFillColor(backgroundColor.cgColor)
             ctx.cgContext.addRect(.init(origin: .zero, size: size))
             ctx.cgContext.fillPath()
-            
+
             let tilePath = UIBezierPath(
                 roundedRect: .init(
                     origin: .init(
@@ -32,12 +32,12 @@ extension UIColor {
                 ),
                 cornerRadius: cornerRadius
             )
-            
+
             ctx.cgContext.setFillColor(patternColor.cgColor)
             ctx.cgContext.addPath(tilePath.cgPath)
             ctx.cgContext.fillPath()
         }
-        
+
         return UIColor(patternImage: image)
     }
 }

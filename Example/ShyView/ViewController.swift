@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         balanceLabel.text = "123,456€"
         balanceLabel.textColor = .white
         
-        headerStackView.addArrangedSubview(balanceLabel.privacySensitive())
+        headerStackView.addArrangedSubview(SecureContainerView(balanceLabel)!)
     }
 }
 
@@ -72,8 +72,9 @@ class TransactionCell: UITableViewCell {
     @IBOutlet private weak var categoryLabel: UILabel!
     @IBOutlet private weak var contentStackView: UIStackView!
     
-    let amountLabel = UILabel()
-    
+    @ShyView
+    var amountLabel: UILabel
+
     lazy var formatter: NumberFormatter = {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
@@ -83,7 +84,7 @@ class TransactionCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        contentStackView.addArrangedSubview(ShyView(amountLabel) ?? amountLabel)
+        contentStackView.addArrangedSubview(_amountLabel)
     }
     
     func configure(transaction: Transaction) {
