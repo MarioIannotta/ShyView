@@ -1,6 +1,6 @@
 {
   "name": "ShyView",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "summary": "A UI component that avoid schreenshots and recordings",
   "description": "Simply Wrap the view you want not to be screenshotted (or recorded) in a ShyView and add it to your hierarchy; ShyView will take care of the rest.\nExample:\n```swift\nlet topSecretLabel = UILabel()\ntopSecretLabel.text = \"4, 8, 15, 16, 23, 42\"\n\nview.addSubview(topSecretLabel.privacySensitive())\n```",
   "homepage": "https://github.com/MarioIannotta/ShyView",
@@ -13,10 +13,10 @@
   },
   "source": {
     "git": "https://github.com/MarioIannotta/ShyView.git",
-    "tag": "0.2.0"
+    "tag": "0.3.0"
   },
   "social_media_url": "https://twitter.com/marioiannotta",
-  "source_files": "Sources/ShyView/ShyView.swift",
+  "source_files": "Sources/ShyView/**/*",
   "swift_versions": "5",
   "platforms": {
     "ios": "13.0"

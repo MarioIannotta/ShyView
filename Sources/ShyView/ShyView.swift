@@ -1,65 +1,69 @@
-//
-//  ShyView.swift
-//  ShyView
-//
-//  Created by Mario Iannotta on 21/04/22.
-//
-
-import Foundation
-
-#if os(iOS)
+#if canImport(UIKit) && !os(watchOS) && !os(tvOS)
 import UIKit
 
-extension UIView {
-    public func privacySensitive(_ isSensitive: Bool = true) -> UIView {
-        isSensitive ? { ShyView(self) ?? self }() : self
+public protocol ShyViewProvider: UIView {}
+extension UIView: ShyViewProvider {}
+
+extension ShyViewProvider {
+    /// Wraps a view in ``ShyView``
+    ///
+    /// - Parameters:
+    ///   - isSensitive: Default value for `ShyView.isPrivacySensitive` property
+    public func privacySensitive(_ isSensitive: Bool = true) -> ShyView<Self> {
+        ShyView(wrappedValue: self, isPrivacySensitive: isSensitive)
     }
 }
 
-public class ShyView: UIView {
-    private var secureView: UIView? = {
-        let secureView: UIView?
-        let textField = UITextField()
-        textField.isSecureTextEntry = true
-        secureView = textField.layer.sublayers?.first?.delegate as? UIView
-        secureView?.subviews.forEach { $0.removeFromSuperview() }
-        secureView?.isUserInteractionEnabled = true
-        return secureView
-    }()
+@propertyWrapper
+public class ShyView<Content: UIView>: UIView {
+    private let secureContainer: SecureContainerView = .init()
     
-    public let contentView = UIView()
-    
-    /// Indicates if the configuration was successful
+    /// Indicates if underlying ``SecureContainerView`` is configured properly
     ///
-    /// Returns `false` if the behavior of the secureView was changed by Apple and the approach is no longer availabe
+    /// - Returns: `false` if system behavior changed and view cannot be secure `true` otherwise
     public var isConfiguredProperly: Bool {
-        return secureView != nil
+        secureContainer.isConfiguredProperly
+    }
+
+
+    /// Indicates if  underlying``SecureContainerView`` isPrivacySensitive
+    public var isPrivacySensitive: Bool {
+        get { secureContainer.isPrivacySensitive }
+        set { secureContainer.isPrivacySensitive = newValue }
     }
     
-    public override var isUserInteractionEnabled: Bool {
-        get { super.isUserInteractionEnabled }
-        set {
-            super.isUserInteractionEnabled = newValue
-            contentView.isUserInteractionEnabled = newValue
-            secureView?.isUserInteractionEnabled = newValue
-        }
+    /// Content view
+    public var content: Content = .init() {
+        didSet { configureContent() }
+    }
+
+    public var wrappedValue: Content {
+        get { self.content }
+        set { self.content = newValue }
     }
     
-    /// Creates a new Shy view with a protected view set
-    ///
-    /// Fails if the behavior of the secureView was changed by Apple and the approach is no longer availabe
-    public convenience init?(_ protectedView: UIView) {
-        self.init(frame: .zero)
-        protectedView.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(protectedView)
-        NSLayoutConstraint.activate([
-            contentView.leadingAnchor.constraint(equalTo: protectedView.leadingAnchor),
-            contentView.trailingAnchor.constraint(equalTo: protectedView.trailingAnchor),
-            contentView.bottomAnchor.constraint(equalTo: protectedView.bottomAnchor),
-            contentView.topAnchor.constraint(equalTo: protectedView.topAnchor)
-        ])
+    public var projectedValue: ShyView<Content> { self }
+    
+    public convenience init(
+        _ content: Content,
+        isPrivacySensitive: Bool = true
+    ) {
+        self.init(
+            wrappedValue: content,
+            isPrivacySensitive: isPrivacySensitive
+        )
     }
     
+    public init(
+        wrappedValue: Content = .init(),
+        isPrivacySensitive: Bool = true
+    ) {
+        self.content = wrappedValue
+        super.init(frame: .zero)
+        self.isPrivacySensitive = isPrivacySensitive
+        self.configure()
+    }
+
     public override init(frame: CGRect) {
         super.init(frame: frame)
         self.configure()
@@ -69,83 +73,29 @@ public class ShyView: UIView {
         super.init(coder: coder)
         self.configure()
     }
-    
+
+    public override var isUserInteractionEnabled: Bool {
+        get { super.isUserInteractionEnabled }
+        set {
+            super.isUserInteractionEnabled = newValue
+            secureContainer.isUserInteractionEnabled = newValue
+        }
+    }
+
     private func configure() {
-        backgroundColor = .clear
-        contentView.backgroundColor = .clear
-        
-        if let secureView = secureView {
-            secureView.translatesAutoresizingMaskIntoConstraints = false
-            addSubview(secureView)
-            NSLayoutConstraint.activate([
-                secureView.leadingAnchor.constraint(equalTo: leadingAnchor),
-                secureView.trailingAnchor.constraint(equalTo: trailingAnchor),
-                secureView.bottomAnchor.constraint(equalTo: bottomAnchor),
-                secureView.topAnchor.constraint(equalTo: topAnchor)
-            ])
-            
-            contentView.translatesAutoresizingMaskIntoConstraints = false
-            secureView.addSubview(contentView)
-            NSLayoutConstraint.activate([
-                contentView.leadingAnchor.constraint(equalTo: secureView.leadingAnchor),
-                contentView.trailingAnchor.constraint(equalTo: secureView.trailingAnchor),
-                contentView.bottomAnchor.constraint(equalTo: secureView.bottomAnchor),
-                contentView.topAnchor.constraint(equalTo: secureView.topAnchor)
-            ])
-        } else {
-            Self.incompatibilityHandler?.action()
-            
-            contentView.translatesAutoresizingMaskIntoConstraints = false
-            addSubview(contentView)
-            NSLayoutConstraint.activate([
-                contentView.leadingAnchor.constraint(equalTo: leadingAnchor),
-                contentView.trailingAnchor.constraint(equalTo: trailingAnchor),
-                contentView.bottomAnchor.constraint(equalTo: bottomAnchor),
-                contentView.topAnchor.constraint(equalTo: topAnchor)
-            ])
-        }
-    }
-}
+        secureContainer.removeFromSuperview()
 
-extension ShyView {
-    /// Triggered action if the behavior of the secureView was changed by Apple and the approach is no longer availabe
-    public static var incompatibilityHandler: IncompatibilityHandler? = .assert()
-    
-    public struct IncompatibilityHandler {
-        public init(_ action: @escaping () -> Void) {
-            self.action = action
-        }
-        
-        internal let action: () -> Void
-    }
-}
+        addSubview(secureContainer)
+        secureContainer.pinEdgesToSuperview()
 
-extension ShyView.IncompatibilityHandler {
-    public static let defaultMessage = """
-    Something doesn't work, please fill an issue with your OS and device version.
-    Repo url: https://github.com/MarioIannotta/ShyView
-    You can disable this message by setting `ShyView.incompatibilityHandler` to `.none`
-    """
-    
-    /// Creates a custom handler for the default message
-    public static func defaultMessage(
-        _ handler: @escaping (String) -> Void
-    ) -> Self {
-        return .init { handler(defaultMessage) }
+        configureContent()
     }
-    
-    /// Creates custom handler, that prints  error message to standard output
-    public static func print(
-        _ message: String = defaultMessage
-    ) -> Self {
-        return .init { Swift.print(message) }
-    }
-    
-    /// Creates custom handler, that triggers assertion failure with a specified  message
-    public static func assert(
-        _ message: String = defaultMessage
-    ) -> Self {
-        return .init { assertionFailure(message) }
+
+    private func configureContent() {
+        content.removeFromSuperview()
+        
+        secureContainer.contentView.addSubview(content)
+        content.pinEdgesToSuperview()
     }
 }
 #endif
